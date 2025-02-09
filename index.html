@@ -3,3 +3,41 @@
 </head>
 ...
 <script src="scripts/tracker.js"></script>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game Progress Tracker</title>
+    <link rel="stylesheet" href="public/styles.css">
+</head>
+<body>
+    <header>
+        <h1>Game Progress Tracker</h1>
+        <nav>
+            <button onclick="showSection('sims')">Sims Tracker</button>
+            <button onclick="showSection('minecraft')">Minecraft Tracker</button>
+        </nav>
+    </header>
+
+    <section id="sims">
+        <h2>Sims Challenge Tracker</h2>
+        <ul>
+            <li><input type="checkbox"> Complete 10 generations</li>
+            <li><input type="checkbox"> Max out all skills</li>
+            <li><input type="checkbox"> Finish every aspiration</li>
+        </ul>
+    </section>
+
+    <section id="minecraft" style="display: none;">
+        <h2>Minecraft Challenge Tracker</h2>
+        <ul>
+            <li><input type="checkbox"> Defeat the Ender Dragon</li>
+            <li><input type="checkbox"> Collect all music discs</li>
+            <li><input type="checkbox"> Build a fully powered beacon</li>
+        </ul>
+    </section>
+
+    <script src="scripts/tracker.js"></script>
+</body>
+</html>
